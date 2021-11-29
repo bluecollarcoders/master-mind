@@ -15,7 +15,7 @@ export const attemps = (answers, uses) => {
     if (Number(answers[i] === Number(uses[i]))) {
       average++;
       percentage++;
-    } else if (uses.includes(Number(answer[i]))) {
+    } else if (uses.includes(Number(answers[i]))) {
       average++;
     }
   }
