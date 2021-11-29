@@ -20,8 +20,7 @@ export const masterMindApi = () => {
 };
 
 // Backup Api In case of api not working it seems a little buggy
-
-export const apiBackup = (number) => {
+const apiBackup = (number) => {
   const numbers = [];
   for (let i = 0; i < 4; i++) {
     numbers.push(randomNumberGenerator(number).toString());
@@ -30,6 +29,6 @@ export const apiBackup = (number) => {
   return numbers;
 };
 
-export const randomNumberGenerator = (number) => {
+const randomNumberGenerator = (number) => {
   return Math.floor(Math.random() * (number + 1));
 };

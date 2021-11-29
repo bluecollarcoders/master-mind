@@ -4,7 +4,7 @@ import "../components/HeroSection.css";
 import "../components/Button";
 import { Button } from "../components/Button";
 
-function HeroSection() {
+const HeroSection = () => {
   return (
     <div className="hero-container">
       <div className="content">
@@ -14,6 +14,6 @@ function HeroSection() {
       </div>
     </div>
   );
-}
+};
 
 export default HeroSection;
