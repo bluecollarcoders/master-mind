@@ -30,13 +30,19 @@ export async function showAnswers() {
 
   for (let [i, card] of cards.entries()) {
     let turn = turnCard(card);
-    let timer = setTimeout(turn, i * 1000);
+    let timer = setTimeout(turn, i * 500);
     await timer;
   }
 }
 
 function turnCard(card) {
   return function () {
-    card.class("turn");
+    card.classList.toggle("turn");
   };
 }
+
+export const GAME_INSTRUCTIONS = [
+  "Computer will randomly select a pattern of four different numbers",
+  "You will have 10 attemps to guess the number combinations",
+  "Game will end after all your attempts",
+];

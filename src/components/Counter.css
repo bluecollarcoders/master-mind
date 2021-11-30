@@ -2,8 +2,11 @@
 
 
 .display-bar {
-    height: 30px;
-    width: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 50px;
+    width: 200px;
     color: black;
     border: solid 4px black;
+    font-size: 20px;
 }

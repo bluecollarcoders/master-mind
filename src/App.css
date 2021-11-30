@@ -36,9 +36,107 @@ img{
 }
 
 
+/* Animations & Keyframes */
+
+.hide {
+    opacity: 0;
+}
+
+.animated {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+}
+
+.comeIn {
+    opacity: 0;
+    animation-name: comeIn;
+    -webkit-animation-name: comeIn;
+}
+
+
+
+
+/* Fade in Animations */
+
+@keyframes comeIn {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes comeIn {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* Game Screen */
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+}
+
+.overlay-content {
+    position: relative;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.start-screen {
+    font-size: 36px;
+	margin-bottom: 2rem;
+	letter-spacing: 1px;
+}
+
+.toggle-display {
+    opacity: 0;
+	display: none;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+.instructions {
+    font-weight: lighter;
+	font-size: 14px;
+	letter-spacing: 1px;
+	transition: all 0.3s ease-out;
+	margin-top: 35%;
+}
+
 #random-numbers {
     width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+

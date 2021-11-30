@@ -11,7 +11,7 @@ const Counter = () => {
   }, [counter]);
   return (
     <div>
-      <p className="display-bar">{counter}</p>
+      <p className="display-bar">Game Counter: {counter}</p>
     </div>
   );
 };

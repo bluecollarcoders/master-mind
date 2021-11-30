@@ -1,0 +1,24 @@
+
+
+.moveUp {
+    margin-top: 25%;
+}
+
+.txt-instructions {
+    background-color: #fff;
+	border: none;
+	margin: 0 auto 5px auto;
+	padding: 3px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.list {
+    font-size: 12px;
+	margin: auto;
+	text-align: start;
+	line-height: 1.5;
+	max-width: 300px;
+	width: 80%;
+	transition: all 0.3s ease-out;
+}
