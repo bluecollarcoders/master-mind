@@ -14,7 +14,6 @@ const HeroSection = () => {
             start game
           </Link>
         </p>
-        <Button />
       </div>
     </div>
   );

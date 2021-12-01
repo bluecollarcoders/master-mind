@@ -3,7 +3,7 @@ import React from "react";
 const PlayCards = ({ playerGuesses, currentGuess }) => {
   return (
     <div id="players-guesses" className="container">
-      {playerGuesses.map((number, idx) => {
+      {playerGuesses.map((number, idx) => (
         <p
           id={idx}
           key={idx}
@@ -12,8 +12,8 @@ const PlayCards = ({ playerGuesses, currentGuess }) => {
           }`}
         >
           {number}
-        </p>;
-      })}
+        </p>
+      ))}
     </div>
   );
 };

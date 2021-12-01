@@ -13,7 +13,6 @@ import Loader from "./Loader";
 import GameEnds from "./GameEnds";
 import ShowScreen from "./ShowScreen";
 
-
 const PLAYER_GUESS_DEFAULT = ["-", "-", "-", "-"];
 
 const GameDisplay = ({ goToStartScreen }) => {
@@ -240,11 +239,7 @@ const GameDisplay = ({ goToStartScreen }) => {
           }`}
         >
           <h3 className="keyboard-header">GUESS THE CODE ABOVE</h3>
-          <Keypad
-            lockPad={lockGameBoard}
-            keypadLength={}
-            handleClick={handleClick}
-          />
+          <Keypad lockPad={lockGameBoard} handleClick={handleClick} />
         </section>
         {/* <!-- Keyboard --> */}
       </div>
