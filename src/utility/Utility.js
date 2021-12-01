@@ -7,7 +7,7 @@ export const answerCheck = (answers, guesses) => {
   return true;
 };
 
-export const attemps = (answers, uses) => {
+export const attempts = (answers, uses) => {
   let average = 0;
   let percentage = 0;
 

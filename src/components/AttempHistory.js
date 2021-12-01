@@ -1,16 +1,16 @@
 import React from "react";
 
-const DEFAULT_ATTEMPS = { values: "---", average: "---", percentage: "---" };
+const DEFAULT_ATTEMPS = { values: "---", exist: "---", location: "---" };
 
 const formatValues = (values) => {
   return values.join("-");
 };
 
-const AttempHistory = ({ attemps, currentAttempt }) => {
+const AttempHistory = ({ attempts, currentAttempt }) => {
   const renderAttempts = [];
   for (let i = 0; i < 9; i++) {
-    let { values, average, percentage } = attemps[i]?.values
-      ? attemps[i]
+    let { values, exist, location } = attempts[i]?.values
+      ? attempts[i]
       : DEFAULT_ATTEMPS;
 
     values = values != DEFAULT_ATTEMPS.values ? formatValues(values) : values;
@@ -18,8 +18,8 @@ const AttempHistory = ({ attemps, currentAttempt }) => {
     renderAttempts.push(
       <tr className="attempt" key={i}>
         <td className="attempt">{values}</td>
-        <td className="attempt">{average}</td>
-        <td className="attempt">{percentage}</td>
+        <td className="attempt">{exist}</td>
+        <td className="attempt">{location}</td>
       </tr>
     );
   }
