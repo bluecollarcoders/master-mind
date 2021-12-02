@@ -158,7 +158,7 @@ br {
     position: absolute;
     left: -32px;
     backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
+    /* -webkit-transform-origin: translate3d(0,0,0); */
     -webkit-backface-visibility: hidden;
      color: orange;
 }

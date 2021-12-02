@@ -16,7 +16,7 @@ const AttempHistory = ({ attempts, currentAttempt }) => {
     values = values != DEFAULT_ATTEMPS.values ? formatValues(values) : values;
 
     renderAttempts.push(
-      <tr className="attempt" key={i}>
+      <tr className="table-attempt" key={i}>
         <td className="attempt">{values}</td>
         <td className="attempt">{exist}</td>
         <td className="attempt">{location}</td>

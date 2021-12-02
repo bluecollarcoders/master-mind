@@ -7,20 +7,20 @@ export const answerCheck = (answers, guesses) => {
   return true;
 };
 
-export const attempts = (answers, uses) => {
-  let average = 0;
-  let percentage = 0;
+export const Attempts = (answers, values) => {
+  let exist = 0;
+  let location = 0;
 
   for (let i = 0; i < uses.length; i++) {
-    if (Number(answers[i] === Number(uses[i]))) {
-      average++;
-      percentage++;
-    } else if (uses.includes(Number(answers[i]))) {
-      average++;
+    if (Number(answers[i] === Number(values[i]))) {
+      exist++;
+      location++;
+    } else if (values.includes(Number(answers[i]))) {
+      exist++;
     }
   }
 
-  return { uses, average, percentage };
+  return { values, exist, location };
 };
 
 export async function showAnswers() {
@@ -37,7 +37,7 @@ export async function showAnswers() {
 
 function turnCard(card) {
   return function () {
-    card.classList.toggle("turn");
+    card.classList.toggle("flip");
   };
 }
 

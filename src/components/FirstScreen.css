@@ -1,20 +1,33 @@
-
-
-.moveUp {
-    margin-top: 25%;
+.instructions {
+	font-weight: lighter;
+	font-size: 14px;
+	letter-spacing: 1px;
+	transition: all 0.3s ease-out;
+	margin-top: 35%;
 }
-
-.txt-instructions {
-    background-color: #fff;
+.instructions.slideUp {
+	margin-top: 25%;
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+	.instructions.slideUp {
+		margin-top: 17rem;
+   }
+}
+@media only screen and (max-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+	.instructions.slideUp {
+		margin-top: 20rem;
+   }
+}
+.instructions .txt-instructions {
+	background-color: #fff;
 	border: none;
 	margin: 0 auto 5px auto;
 	padding: 3px;
 	cursor: pointer;
 	font-size: 16px;
 }
-
-.list {
-    font-size: 12px;
+.instructions-list {
+	font-size: 12px;
 	margin: auto;
 	text-align: start;
 	line-height: 1.5;
@@ -22,3 +35,16 @@
 	width: 80%;
 	transition: all 0.3s ease-out;
 }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+	.instructions {
+		margin-top: 25rem;
+   }
+}
+@media only screen and (max-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+	.instructions {
+		margin-top: 30rem;
+   }
+}
+
+
+

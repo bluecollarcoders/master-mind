@@ -3,13 +3,13 @@ import AttempHistory from "../components/AttempHistory";
 
 const PlayerHistory = ({ attempts, currentAttempt }) => {
   return (
-    <div>
-      <table>
+    <div className="table container">
+      <table id="history-tables">
         <thead>
-          <tr>
-            <td>uses</td>
-            <td>average</td>
-            <td>percentage</td>
+          <tr className="table-titles-container">
+            <td className="table-title">Attempts</td>
+            <td className="table-title">Exist</td>
+            <td className="table-title">Location</td>
           </tr>
         </thead>
         <AttempHistory attemps={attempts} currentAttempt={currentAttempt} />

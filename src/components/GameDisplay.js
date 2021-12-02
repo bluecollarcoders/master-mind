@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import from api
 import { masterMindApi } from "../api/masterMindApi";
 // import utility
-import { attempts, answerCheck } from "../utility/Utility";
+import { Attempts, answerCheck } from "../utility/Utility";
 // import Components
 import AnswerCard from "./AnswerCard";
 import PlayCards from "./PlayCards";
@@ -142,7 +142,7 @@ const GameDisplay = ({ goToStartScreen }) => {
   };
 
   const updateUserAttempts = (currentAttemptValues) => {
-    const attemptData = attempts(answers, currentAttemptValues);
+    const attemptData = Attempts(answers, currentAttemptValues);
     console.log({ attemptData, playerAttempts });
     setPlayerAttempts((trys) => [...trys, attemptData]);
   };

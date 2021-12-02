@@ -13,12 +13,12 @@ const FirstScreen = ({ show }) => {
     >
       <div className="overlay-content-container">
         <div className="overlay-content animated hide comeIn">
-          <h1 className="start-screen">Master Mind</h1>
+          <h1 className="game-title start-screen">Master Mind</h1>
         </div>
       </div>
       <footer
         id="instructions"
-        className={`instructions ${showInstructions ? "moveUp" : ""}`}
+        className={`instructions ${showInstructions ? "slideUp" : ""}`}
       >
         <button onClick={toggleShowInstructions} className="txt-intructions">
           Instructions
