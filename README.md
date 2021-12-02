@@ -1,10 +1,9 @@
 # Master Mind
 
+Master mind is a game where a player gets 10 chances to guess the right 4 numbers
+
 ![mastermind](https://user-images.githubusercontent.com/67053237/144350900-299bac6b-8235-4922-911d-d15dbfc2092f.png)
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
