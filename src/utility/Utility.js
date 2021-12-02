@@ -11,7 +11,7 @@ export const Attempts = (answers, values) => {
   let exist = 0;
   let location = 0;
 
-  for (let i = 0; i < uses.length; i++) {
+  for (let i = 0; i < values.length; i++) {
     if (Number(answers[i] === Number(values[i]))) {
       exist++;
       location++;

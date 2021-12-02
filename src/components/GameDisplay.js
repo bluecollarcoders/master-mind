@@ -50,13 +50,14 @@ const GameDisplay = ({ goToStartScreen }) => {
 
   // Player makes all guesses in time
   useEffect(() => {
-    if (setPlayerGuessIndex === 4) {
+    if (playerGuessIndex === 4) {
       if (timerOn) {
         clearTimer();
         setTimerOn(false);
-        handleGuesses();
       }
+
       setLockGameBoard(true);
+      handleGuesses();
     }
   }, [playerGuessIndex]);
 

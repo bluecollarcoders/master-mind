@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const masterMindApi = (maxNumber) => {
+export const masterMindApi = async (maxNumber) => {
   const BASE_URL = `https://www.random.org/integers`;
   const params = `?num=4&min=0&max=${maxNumber}&col=1&base=10&format=plain&rnd=new`;
   const url = `${BASE_URL}/${params}`;

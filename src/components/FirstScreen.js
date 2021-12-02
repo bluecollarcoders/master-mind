@@ -11,8 +11,8 @@ const FirstScreen = ({ show }) => {
       style={{ display: show ? "display" : "none" }}
       className="overlay-default"
     >
-      <div className="overlay-content-container">
-        <div className="overlay-content animated hide comeIn">
+      <div id="home-screen" className="overlay-content-container">
+        <div className="overlay-content animated hide fadeInUp">
           <h1 className="game-title start-screen">Master Mind</h1>
         </div>
       </div>
@@ -25,7 +25,7 @@ const FirstScreen = ({ show }) => {
         </button>
 
         <ul
-          className={`game-instructions ${
+          className={`instructions-list ${
             !showInstructions ? "toggle-display" : ""
           }`}
         >

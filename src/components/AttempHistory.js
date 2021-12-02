@@ -1,6 +1,6 @@
 import React from "react";
 
-const DEFAULT_ATTEMPS = { values: "---", exist: "---", location: "---" };
+const DEFAULT_ATTEMPTS = { values: "---", exist: "---", location: "---" };
 
 const formatValues = (values) => {
   return values.join("-");
@@ -11,9 +11,9 @@ const AttempHistory = ({ attempts, currentAttempt }) => {
   for (let i = 0; i < 9; i++) {
     let { values, exist, location } = attempts[i]?.values
       ? attempts[i]
-      : DEFAULT_ATTEMPS;
+      : DEFAULT_ATTEMPTS;
 
-    values = values != DEFAULT_ATTEMPS.values ? formatValues(values) : values;
+    values = values !== DEFAULT_ATTEMPTS.values ? formatValues(values) : values;
 
     renderAttempts.push(
       <tr className="table-attempt" key={i}>
