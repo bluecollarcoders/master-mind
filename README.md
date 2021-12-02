@@ -22,7 +22,7 @@ $ npm -v                         check if npm is installed
 
 
 ### Clone Repo
-$ cd [workspace directory]
+$ cd workspace directory
 $ git clone  https://github.com/bluecollarcoders/master-mind
 
 ### `npm start`
