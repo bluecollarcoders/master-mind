@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Master Mind
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![2021-12-01](https://user-images.githubusercontent.com/67053237/144350290-da70b74f-9f77-4968-bc5c-04ca72d6e0cb.png)
 
 ## Available Scripts
 
