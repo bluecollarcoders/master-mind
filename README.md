@@ -15,10 +15,10 @@ To run npm/yarn, you will need Node.js. You can go on official Node.js website a
 
 If the installation was successful, you should be able to run the following command.
 
-$ node -v                       # check if node is installed
-  v10.16.0                      # version number
-$ npm -v                        # check if npm is installed
-  6.14.12                       # version number
+$ node -v                        check if node is installed
+  v10.16.0                       version number
+$ npm -v                         check if npm is installed
+  6.14.12                        version number
 
 
 ### `npm start`
