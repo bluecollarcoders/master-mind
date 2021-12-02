@@ -10,7 +10,7 @@ const HeroSection = () => {
         <h1>Master Mind</h1>
         <p>
           Guess the right 4 numbers To win
-          <Link className="btn btn-dark" to="/game">
+          <Link className="btn" to="/game">
             start game
           </Link>
         </p>

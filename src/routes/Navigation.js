@@ -2,10 +2,11 @@ import React from "react";
 import { Routes, Navigate, Route } from "react-router-dom";
 import LandingPage from "../pages/LandingPage";
 import GamePage from "../pages/GamePage";
+import "../App.css";
 
 const Navigation = () => {
   return (
-    <div>
+    <div className="App">
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="game" element={<GamePage />} />
