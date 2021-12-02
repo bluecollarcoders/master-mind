@@ -1,6 +1,6 @@
 # Master Mind
 
-![2021-12-01](https://user-images.githubusercontent.com/67053237/144350290-da70b74f-9f77-4968-bc5c-04ca72d6e0cb.png)
+![mastermind](https://user-images.githubusercontent.com/67053237/144350900-299bac6b-8235-4922-911d-d15dbfc2092f.png)
 
 ## Available Scripts
 
