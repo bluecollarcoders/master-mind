@@ -21,6 +21,10 @@ $ npm -v                         check if npm is installed
   6.14.12                        version number
 
 
+### Clone Repo
+$ cd [workspace directory]
+$ git clone  https://github.com/bluecollarcoders/master-mind
+
 ### `npm start`
 
 Runs the app in the development mode.\
