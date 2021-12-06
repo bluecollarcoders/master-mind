@@ -1,8 +1,8 @@
 import axios from "axios";
 
-export const masterMindApi = async (maxNumber) => {
+export const masterMindApi = async () => {
   const BASE_URL = `https://www.random.org/integers`;
-  const params = `?num=4&min=0&max=${maxNumber}&col=1&base=10&format=plain&rnd=new`;
+  const params = `?num=4&min=0&max=7&col=1&base=10&format=plain&rnd=new`;
   const url = `${BASE_URL}/${params}`;
 
   try {
@@ -15,7 +15,7 @@ export const masterMindApi = async (maxNumber) => {
   } catch (error) {
     console.error(error);
     console.error("error calling api");
-    return apiBackup(maxNumber);
+    return apiBackup();
   }
 };
 
