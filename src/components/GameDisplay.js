@@ -76,9 +76,9 @@ const GameDisplay = ({ goToStartScreen }) => {
         if (!gameOver) {
           setTimerOn(false);
         }
-      }, [timerOn]);
+      });
     }
-  });
+  }, [timerOn]);
 
   //   Game is over
 
