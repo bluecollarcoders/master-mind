@@ -31,7 +31,7 @@ export async function showAnswers() {
   for (let [i, card] of cards.entries()) {
     let turn = turnCard(card);
     let timer = setTimeout(turn, i * 500);
-    timer;
+    await timer;
   }
 }
 
