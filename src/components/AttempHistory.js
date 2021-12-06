@@ -6,7 +6,7 @@ const formatValues = (values) => {
   return values.join("-");
 };
 
-const AttempHistory = ({ attempts, currentAttempt }) => {
+function AttempHistory({ attempts, currentAttempt }) {
   const renderAttempts = [];
   for (let i = 0; i < 9; i++) {
     let { values, exist, location } = attempts[i]?.values
@@ -24,6 +24,6 @@ const AttempHistory = ({ attempts, currentAttempt }) => {
     );
   }
   return <tbody>{renderAttempts}</tbody>;
-};
+}
 
 export default AttempHistory;
