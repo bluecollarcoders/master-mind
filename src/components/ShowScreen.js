@@ -10,13 +10,7 @@ const checkGuesses = (guesses) => {
   }
 };
 
-const ShowScreen = ({
-  guesses,
-  existing,
-  matches,
-  handleClick,
-  handleReset,
-}) => {
+function ShowScreen({ guesses, existing, matches, handleClick, handleReset }) {
   return (
     <div
       id="overlay"
@@ -48,6 +42,6 @@ const ShowScreen = ({
       </div>
     </div>
   );
-};
+}
 
 export default ShowScreen;
