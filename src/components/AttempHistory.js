@@ -9,9 +9,8 @@ const formatValues = (values) => {
 function AttempHistory({ attempts, currentAttempt }) {
   const renderAttempts = [];
   for (let i = 0; i < 9; i++) {
-    let { values, exist, location } = attempts[i]?.values
-      ? attempts[i]
-      : DEFAULT_ATTEMPTS;
+    let { values, exist, location } =
+      attempts[i]?.values || DEFAULT_ATTEMPTS ? attempts[i] : DEFAULT_ATTEMPTS;
 
     values = values !== DEFAULT_ATTEMPTS.values ? formatValues(values) : values;
 
