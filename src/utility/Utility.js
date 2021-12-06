@@ -12,7 +12,7 @@ export const Attempts = (answers, values) => {
   let location = 0;
 
   for (let i = 0; i < values.length; i++) {
-    if (Number(answers[i] === Number(values[i]))) {
+    if (Number(answers[i]) === Number(values[i])) {
       exist++;
       location++;
     } else if (values.includes(Number(answers[i]))) {
